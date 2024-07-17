@@ -1,10 +1,17 @@
 body{
     height: 200vh;  
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }  
 #intro{
-    margin-top:7%;
-}
+    margin-top:3%; 
+    cursor:default;
+} 
+.fade-in { animation: fadeIn 1.5s; } 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }  
 .typewriter{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(131, 166, 219); /* The typwriter cursor */
@@ -16,7 +23,7 @@ body{
       blink-caret 1s step-end infinite; 
       animation-fill-mode: forwards; 
       animation-delay: 0s, 2.25s;
-  }
+  } 
   
   /* The typing effect */
   @keyframes typing {
@@ -30,17 +37,58 @@ body{
     50% { border-color: rgb(145, 176, 244); }
   }
 #face-img{
-    height:50%;  
     width:100%;  
     display:block;
+}  
+#intro-facecard{
+    transition: transform 0.5s ease;  
 } 
+#intro-facecard.reveal{
+    transform: translateX(-5%);
+}
 #face-description{
     height:30%;  
     width:50px;
 }
-#intro-facecard{  
-    cursor:pointer;
-} 
+
 #intro-description{
-    width:25%; 
+    width:25%;  
+    margin-left:80px; 
+}  
+#description1{ 
+    margin-top: 50px;
+    letter-spacing: .08em; 
+    line-height:1.5;
+}
+ 
+.divider{ 
+    margin-top:18%;
+    height:5px; 
+    color:rgba(0, 0, 0, 0.2); 
+    border-width: 1px; 
+    border:solid; 
+    width:100%;
+} 
+ 
+.divider2{ 
+    margin-top:45%;
+    height:5px; 
+    color:rgba(0, 0, 0, 0.2); 
+    border-width: 1px; 
+    border:solid; 
+    width:100%;
+} 
+
+#about-me-title{ 
+    width:100%;
+    display:block; 
+} 
+#description2{   
+    position:absolute;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
