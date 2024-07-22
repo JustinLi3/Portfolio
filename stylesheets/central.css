@@ -1,5 +1,5 @@
 body{
-    height: 200vh;  
+    height: 300vh;  
     font-family:Georgia, 'Times New Roman', Times, serif;
     overflow-x: hidden;
 }  
@@ -71,7 +71,7 @@ body{
 } 
  
 .divider2{ 
-    margin-top:45%;
+    margin-top:5%;
     height:5px; 
     color:rgba(0, 0, 0, 0.2); 
     border-width: 1px; 
@@ -83,12 +83,18 @@ body{
     width:100%;
     display:block; 
 } 
-#description2{   
-    position:absolute;
-    margin-top:30px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+
+.tools{  
+    aspect-ratio: 1 / 1;
+    width:30%;  
+    border: solid; 
+    border-radius: 30%;  
+    border-width: 3px; 
+    border-color: rgba(1, 1, 1, 0.643);
+    margin: 5px;   
+}  
+
+#app_grid{
+    padding:5px; 
+    width:25%
 }
