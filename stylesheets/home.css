@@ -1,0 +1,128 @@
+.fade-in { animation: fadeIn 1.5s; }  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }  
+
+
+#intro{
+    margin-top:3%; 
+    cursor:default;
+} 
+#description1{ 
+    margin-top: 50px;
+    letter-spacing: .08em; 
+    line-height:1.5;
+}
+
+.container{
+    width: 100%;
+    overflow: hidden;
+}
+.container .text{
+    position: relative;
+    color: #4070F4;
+    font-size: 50px;
+    font-weight: 600;
+}
+.container .text.first-text{
+    color: rgb(22, 22, 22); 
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-left: 2px solid #4070F4;
+    animation: animate 3s steps(12) infinite;
+}
+
+#home{
+    padding:0; 
+}
+/* #face-img{
+    width:100%;  
+    display:block;
+}   */ 
+#img{
+    background-color: blue; 
+    height:50%; 
+    width:50%; 
+
+}
+#intro-facecard{
+    transition: transform 0.5s ease;   
+} 
+#intro-facecard.reveal{
+    transform: translateX(-30%);
+}
+#face-description{
+    height:30%;  
+    width:50px;
+}
+
+#intro-description{
+    width:25%;    
+    right:10%;
+    position:absolute;
+    margin-left:80px;
+}  
+
+@media (max-width:1150px){
+    #description1{
+        font-size: 25px;
+    }  
+    .container .text.first-text{
+        font-size: 40px; 
+    }
+    .container .text.sec-text
+    {
+        font-size: 40px; 
+    }
+} 
+
+@media (max-width:1100px){
+    #description1{
+        font-size: 20px;
+    }  
+    .text{
+        font-size: 30px;
+    }  
+    .headbutton{
+        font-size:15px;
+    }
+    .container .text.first-text{
+        font-size: 30px; 
+    }
+    .container .text.sec-text
+    {
+        font-size: 30px; 
+    }
+} 
+@media (max-width:610px){
+    #description1{
+        font-size: 15px;
+    }   
+    .headbutton{
+        font-size:10px;
+    }
+    .container .text.first-text{
+        font-size: 20px; 
+    }
+    .container .text.sec-text
+    {
+        font-size: 20px; 
+    }
+} 

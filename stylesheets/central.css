@@ -1,99 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:ital,wght@0,500;1,100;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     height: 300vh;  
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: "poppins", sans-serif;
     overflow-x: hidden;
 }  
-#intro{
-    margin-top:3%; 
-    cursor:default;
-} 
-.fade-in { animation: fadeIn 1.5s; } 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }  
-.typewriter{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(131, 166, 219); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .08em; /* Adjust as needed */
-    animation: 
-      typing 2.25s steps(35, end),
-      blink-caret 1s step-end infinite; 
-      animation-fill-mode: forwards; 
-      animation-delay: 0s, 2.25s;
-  } 
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 90% }
-  }
 
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(145, 176, 244); }
-  }
-#face-img{
-    width:100%;  
-    display:block;
-}  
-#intro-facecard{
-    transition: transform 0.5s ease;  
-} 
-#intro-facecard.reveal{
-    transform: translateX(-5%);
-}
-#face-description{
-    height:30%;  
-    width:50px;
-}
-
-#intro-description{
-    width:25%;  
-    margin-left:80px; 
-}  
-#description1{ 
-    margin-top: 50px;
-    letter-spacing: .08em; 
-    line-height:1.5;
-}
- 
-.divider{ 
-    margin-top:5%;
-    height:5px; 
-    color:rgba(0, 0, 0, 0.2); 
-    border-width: 1px; 
-    border:solid; 
-    width:100%;
-} 
- 
-.divider2{  
-    position:absolute; 
-    top:190%;
-    height:5px; 
-    color:rgba(0, 0, 0, 0.2); 
-    border-width: 1px; 
-    border:solid; 
-    width:100%;
-}   
-
-.divider3{  
-    position:absolute; 
-    top:290%;
-    height:5px; 
-    color:rgba(0, 0, 0, 0.2); 
-    border-width: 1px; 
-    border:solid; 
-    width:100%;
-} 
-
-#about-me-title{ 
-    width:100%;
-    display:block; 
-} 
 
 .tools{  
     aspect-ratio: 1 / 1;
@@ -125,14 +36,15 @@ body{
 .arrow2 {
     position: absolute;
     bottom: 2.5rem; 
-    top:285%;
+    top:280%;
     right: 3%;
 }
 
 section {
-    padding-top: 4vh;
+    padding-top: 5vh; 
     height: 96vh;
-    margin: 0 10rem;
+    margin: 0 10rem;  
+    margin-top:0;
     box-sizing: border-box;
     min-height: fit-content;
     transition: all 300ms ease-in-out;
