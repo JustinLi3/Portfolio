@@ -1,5 +1,103 @@
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    7.1428%{
+        transform: translateX(0);
+    }
+    14.2856%{
+        transform: translateX(-100%);
+    }
+    21.4284%{
+        transform: translateX(-100%);
+    }
+    28.5712%{
+        transform: translateX(-200%);
+    }
+    35.7140%{
+        transform: translateX(-200%);
+    }
+    42.8568%{
+        transform: translateX(-300%);
+    }
+    49.9996%{
+        transform: translateX(-300%);
+    }
+    57.1424%{
+        transform: translateX(-400%);
+    }
+    64.2852%{
+        transform: translateX(-400%);
+    }
+    71.4280%{
+        transform: translateX(-500%);
+    }
+    78.5708%{
+        transform: translateX(-500%);
+    }
+    85.7136%{
+        transform: translateX(-600%);
+    }
+    100%{
+        transform: translateX(-600%);
+    }
+}
 #about-me-title{ 
     width:100%;
     display:block;  
     font-size: 60px;
+} 
+.slide{ 
+    width: 40%; 
+    height: 130%;
+    overflow: hidden;
+    border: 1px solid #031407;
+    border-radius: 8px; 
+}
+.wrapper{
+    width: 100%; 
+    display: flex;
+    animation: slide 25s infinite;  
+    padding:30px;
+}
+
+.tools{  
+    aspect-ratio: 1 / 1;
+    width:10%;   
+    border: solid; 
+    border-radius: 30%;  
+    border-width: 1px; 
+    border-color: rgba(206, 204, 204, 0.643);
+    margin: 20px;    
+    transition: transform 0.5s; 
+    min-width: 90px;
+}   
+#description2{ 
+    width:34%; 
+    font-size:20px; 
+    margin-top:15px; 
+    line-height:1.5;
+}
+.tools:hover{ 
+    transform:scale(1.1);
+}  
+@media (max-width:1200px){
+    
+} 
+@media (max-width:750px){
+    #description2{
+        font-size:17px;
+    }
+} 
+
+@media (max-width:560px){
+    #description2{
+        font-size:15px;
+    }
+} 
+
+@media (max-width:465px){
+    #description2{
+        font-size:13px;
+    }
 } 

@@ -15,16 +15,16 @@
     <body>  
         <!--#region header-->
         <div id="header" class="row justify-content-around align-items-center sticky-top">  
-            <button class="btn btn-dark headbutton col-2 p-2 ml-5" onclick="location.href='./#homeArea'">
+            <button class="btn btn-outline-dark headbutton col-2 p-2 ml-5" onclick="location.href='./#homeArea'">
                 Home
             </button> 
-            <button class="btn btn-dark headbutton p-2 col-2" onclick="location.href='./#about'">
+            <button class="btn btn-outline-dark headbutton p-2 col-2" onclick="location.href='./#about'">
                 About Me
             </button> 
-            <button class="btn btn-dark headbutton p-2 col-2" onclick="location.href='./#resume'">
+            <button class="btn btn-outline-dark headbutton p-2 col-2" onclick="location.href='./#resume'">
                 Resume
             </button> 
-            <button class="btn btn-dark headbutton p-2 col-2 mr-5" onclick="location.href='./#contact'">
+            <button class="btn btn-outline-dark headbutton p-2 col-2 mr-5" onclick="location.href='./#contact'">
                 Contact
             </button>  
         </div>   
@@ -46,35 +46,62 @@
                     </div>
                 </div>
                 <div id="intro-description" hidden>
-                    <h3 class="fade-in" id="description1">Welcome to my portfolio website! I'm a passionate computer science student at Rutgers University, driven by a love for technology and a commitment to continuous learning.</h2>
+                    <h3 class="fade-in" id="description1">Hello! I'm Justin Li, welcome to my portfolio website! I'm a passionate computer science student at Rutgers University, driven by my commitment to learning and love for problem-solving.</h2>
                 </div> 
             </div>            
-            <!--#endregion--> 
-        
-
-        <!--#region about me screen--> 
-        <section id="about">
-            <div class="h-25 w-100"  style="margin-top:100px">  
-                <h1 id="about-me-title" style="margin-top:8%;" class="text-center">About Me</h1>  
+            <!--#endregion-->  
+            <hr id="about" class="position-absolute" style="top:75%"> 
+            <!--#region about me screen--> 
+            <div class="h-25 w-100" id="about" style="margin-top:0px">  
+                <h1 id="about-me-title" style="margin-top:8%; margin-left:13%; margin-bottom:0%;" class="text-start">About Me</h1>  
                 <div class ="d-flex h-50 w-100 justify-content-center"> 
-                    <p class="h-100" style="width:25%; font-size:20px; margin-top:35px; line-height:1.5;">Hello! I'm Justin Li, a dedicated and ambitious Computer Science student currently pursuing my Bachelor of Sciences at Rutgers University-New Brunswick, with a minor in Data Science. With a strong academic record, consistently making the Dean's List each semester, I am set to graduate in December 2025.
-                    </p> 
-                    <div id="app_grid" class="ml-4 h-100 mt-4" style="width:35%" > 
-                        <div class="h-25 row justify-content-center" style="cursor:pointer;">
-                            <div class="tools text-center"><a href="https://www.java.com/en/" target="_blank"><img src="images/java.png" class="w-75 p-4 h-100" style=" object-fit:contain;"></a></div> 
-                            <div class="tools text-center"><a href="https://www.python.org" target="_blank"><img src="images/python.png" class="w-75 p-3 h-100" style=" object-fit:contain;"></a></div> 
-                            <div class="tools text-center"><a href="https://www.javascript.com" target="_blank"><img src="images/js.png" class="w-75 p-4 h-100" style=" object-fit:contain;"></a></div> 
-                        </div> 
-                        <div class="h-25 row justify-content-center" style="margin-top:115px; cursor:pointer;">
-                            <div class="tools text-center"><a href="https://www.mysql.com" target="_blank"><img src="images/MySql.png" class="w-75  pt-3" style="margin-top:5px;"></a></div> 
-                            <div class="tools text-center"><a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank"><img src="images/CSharp.png" class="w-75 p-3" style="margin-top:8%;" ></a></div> 
-                            <div class="tools text-center"><a href="https://www.w3schools.com/html/html_css.asp" target="_blank"><img src="images/html_css.png" class="w-75 pt-2" style="margin-top:8%;" ></a></div> 
-                        </div>   
-                        <img src="images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#resume'">
-                    </div>
-                </div>
+                    <p id="description2" class="h-100">I am a Computer Science student currently pursuing a Bachelor of Sciences at Rutgers University-New Brunswick. As curious as I am about programming, I am curious about the world and spend a lot of time on hobbies as to programming.
+                    </p>  
+                    <div class="slide ml-5">
+                        <div class="wrapper">
+                            <img src="images/Rutgers-University-Logo.jpg" class="h-50 w-100 mt-3 mr-5"> 
+                            <img src="images/sightsee.jpg" class="h-100 w-100 mr-4 mt-1" style="margin-left: 12px;">
+                            <img src="images/sightsee2.jpg" class="h-50 w-100" style="margin-left: 36px; margin-right: 10px;">
+                            <img src="images/rockclimb.jpg" class="h-50 w-100 ml-5 mr-5">
+                            <img src="images/weightlift.jpg" class="h-50 w-100 ml-3 mr-5"> 
+                            <img src="images/bowl.jpg" class="h-50 w-100 ml-2 mr-3">  
+                            <img src="images/pool.jpg" class="h-50 w-100 ml-5 mr-5 mt-2"> 
+
+                        </div>
+                    </div>   
+                </div>     
+                <h1 style="margin-left:17%; margin-top:15%;">Projects</h1>
+
+                <h1 style="margin-left:17%; margin-top:15%;">Skills</h1>
+                <h5 style="margin-top:20px; margin-left:17.5%; margin-bottom:0px;">Languages</h5>
+                <div id="app_grid" class=" w-75" style="margin-left:13%;" > 
+                    <div class="h-25 row w-100 justify-content-center" style="cursor:pointer;">
+                        <div class="tools text-center"><a href="https://www.java.com/en/" target="_blank"><img src="images/java.png" class="w-75 p-4 h-100" style=" object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://www.python.org" target="_blank"><img src="images/python.png" class="w-75 p-3 h-100" style=" object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://www.javascript.com" target="_blank"><img src="images/js.png" class="w-75 p-4 h-100" style=" object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://www.mysql.com" target="_blank"><img src="images/MySql.png" class="w-75  pt-3" style="margin-top:5px;"></a></div> 
+                        <div class="tools text-center"><a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank"><img src="images/CSharp.png" class="w-75 p-3" style="margin-top:8%;" ></a></div> 
+                        <div class="tools text-center"><a href="https://www.w3schools.com/html/html_css.asp" target="_blank"><img src="images/html_css.png" class="w-75 pt-2" style="margin-top:8%;" ></a></div> 
+                    </div>   
+                </div>  
+                <h5 class="mt-2" style="margin-left:17.5%; margin-bottom:0px;">Frameworks</h5> 
+                <div id="app_grid" class=" w-75" style="top:205%; margin-left:19%;" > 
+                    <div class="h-25 row w-100 justify-content-start" style="cursor:pointer;">
+                        <div class="tools text-center"><a href="https://jquery.com" target="_blank"><img src="images/jquery.gif" class="p-4 h-100" style="width:90%; object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://getbootstrap.com" target="_blank"><img src="images/bootstrap.png" class="p-3 h-100" style="width:75%; object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://react.dev" target="_blank"><img src="images/react.png" class=" p-3 h-100" style="width:95%; object-fit:contain;"></a></div> 
+                    </div>   
+                </div>   
+                <h5 class="mt-2" style="margin-left:17.5%; margin-bottom:0px;">Other</h5> 
+                <div id="app_grid" class=" w-75" style="top:205%; margin-left:19%;" > 
+                    <div class="h-25 row w-100 justify-content-start" style="cursor:pointer;">
+                        <div class="tools text-center"><a href="https://git-scm.com" target="_blank"><img src="images/git.png" class="h-100" style="width:105%; object-fit:contain;"></a></div> 
+
+                    </div>   
+                </div>  
+                <img src="images/arrow.png" alt="Arrow icon" class="icon arrow position-absolute" style="top:200%;" onclick="location.href='./#resume'">
+
             </div>  
-        </section> 
             <!--MAKE SURE TO INCLUDE SKILLS -->
 
         <!--#endregion-->  

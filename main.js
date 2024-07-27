@@ -25,13 +25,13 @@ $(document).ready(function(){
         }, 0);
         setTimeout(() => {
             text.textContent = "Designer";
-        }, 4000);
+        }, 3000);
         setTimeout(() => {
             text.textContent = "Freelancer";
-        }, 8000); //1s = 1000 milliseconds
+        }, 6000); //1s = 1000 milliseconds
     }
     textLoad();
-    setInterval(textLoad, 12000);  
+    setInterval(textLoad, 9000);  
 
     $(window).scroll(function(){
         $("#welcome-text").css("opacity", 1 - $(window).scrollTop()/500);

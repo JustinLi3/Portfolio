@@ -15,7 +15,7 @@
 
 
 #intro{
-    margin-top:3%; 
+    margin-top:1%; 
     cursor:default;
 } 
 #description1{ 
@@ -30,7 +30,7 @@
 }
 .container .text{
     position: relative;
-    color: #4070F4;
+    color: #106222;
     font-size: 50px;
     font-weight: 600;
 }
@@ -45,7 +45,7 @@
     height: 100%;
     width: 100%;
     background-color: #ffffff;
-    border-left: 2px solid #4070F4;
+    border-left: 2px solid #106222;
     animation: animate 3s steps(12) infinite;
 }
 
@@ -109,6 +109,12 @@
     .container .text.sec-text
     {
         font-size: 30px; 
+    }
+}  
+
+@media (max-width:750px){
+    #description2{
+        font-size:10px;
     }
 } 
 @media (max-width:610px){

@@ -5,22 +5,6 @@ body{
     overflow-x: hidden;
 }  
 
-
-.tools{  
-    aspect-ratio: 1 / 1;
-    width:30%;  
-    border: solid; 
-    border-radius: 30%;  
-    border-width: 3px; 
-    border-color: rgba(1, 1, 1, 0.643);
-    margin: 5px;   
-}  
-
-#app_grid{
-    padding:5px; 
-    width:25%
-}
-
 .icon {
     cursor: pointer;
     height: 2rem;
@@ -40,15 +24,6 @@ body{
     right: 3%;
 }
 
-section {
-    padding-top: 5vh; 
-    height: 96vh;
-    margin: 0 10rem;  
-    margin-top:0;
-    box-sizing: border-box;
-    min-height: fit-content;
-    transition: all 300ms ease-in-out;
-}
 
 
 
