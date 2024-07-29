@@ -30,7 +30,7 @@
 }
 .container .text{
     position: relative;
-    color: #106222;
+    color: #102462;
     font-size: 50px;
     font-weight: 600;
 }
@@ -45,7 +45,7 @@
     height: 100%;
     width: 100%;
     background-color: #ffffff;
-    border-left: 2px solid #106222;
+    border-left: 2px solid #102462;
     animation: animate 3s steps(12) infinite;
 }
 
