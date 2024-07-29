@@ -16,8 +16,14 @@ $(document).ready(function(){
             }, 100);
 
         }
-       
-    }); 
+    });  
+    document.querySelector('#contact-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        e.target.elements.name.value = '';
+        e.target.elements.email.value = '';
+        e.target.elements.message.value = '';
+    });
+
     const text = document.querySelector(".sec-text");
     const textLoad = () => {
         setTimeout(() => {

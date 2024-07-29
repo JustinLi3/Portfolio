@@ -80,7 +80,17 @@
 }
 .tools:hover{ 
     transform:scale(1.1);
-}  
+}   
+
+.project-card{
+    transition: transform ease 0.5s; 
+    cursor:pointer;
+} 
+.project-card:hover{
+    transform: translateY(-10px);
+}
+
+
 @media (max-width:1200px){
     
 } 
