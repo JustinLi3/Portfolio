@@ -2,7 +2,7 @@
 body{
     height: 300vh;  
     font-family: "poppins", sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }  
 
 #header{ 

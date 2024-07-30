@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){ 
     $("#intro").css("cursor","pointer")
     $("#intro").click(function() {  

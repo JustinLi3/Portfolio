@@ -8,7 +8,8 @@
 	flex-direction: row;
 	justify-content: space-between;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 20px; 
+	padding-bottom: 0px;
 	position: relative;
 	max-width: 840px;
   }
@@ -30,15 +31,7 @@
   /* Location, Phone, Email Section */
   .contact-list {
 	list-style-type: none;
-	margin-left: -30px;
-	padding-right: 20px;
   }
-  
-  .list-item {
-	line-height: 4;
-	color: #aaa;
-  }
-  
   .contact-text {
 	font: 300 18px 'Lato', sans-serif;
 	letter-spacing: 1.9px;
@@ -78,10 +71,7 @@
 	margin: 0 auto;
 	padding: 0;
   }
-  
-  .social-media-list li a {
-	color: #fff;
-  }
+ 
   
   .social-media-list li {
 	position: relative; 
@@ -92,7 +82,7 @@
 	line-height: 60px;
 	border-radius: 50%;
 	color: #fff;
-	background-color: rgb(27,27,27);
+	background-color: rgb(229, 229, 229);
 	cursor: pointer; 
 	transition: all .2s ease-in-out;
   }
@@ -112,7 +102,7 @@
   }
   
   .social-media-list li:hover {
-	background-color: #fff; 
+	background-color: rgb(157, 157, 157); 
   }
   
   .social-media-list li:hover:after {
@@ -123,13 +113,6 @@
   
   .social-media-list li:hover a {
 	color: #000;
-  }
-  
-  .copyright {
-	font: 200 14px 'Oswald', sans-serif;
-	color: #555;
-	letter-spacing: 1px;
-	text-align: center;
   }
   
   hr {
