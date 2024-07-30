@@ -16,7 +16,7 @@
     <body class="h-100">  
         <!--#region header-->
         <div id="header" class="row justify-content-around align-items-center sticky-top">  
-            <button class="btn btn-outline-dark headbutton col-2 p-2 ml-5" onclick="location.href='./#homeArea'">
+            <button id="leftbutton" class="btn btn-outline-dark headbutton col-2 p-2 ml-5" onclick="location.href='./#homeArea'">
                 Home
             </button> 
             <button class="btn btn-outline-dark headbutton p-2 col-2" onclick="location.href='./#aboutArea'">
@@ -28,7 +28,7 @@
             <button class="btn btn-outline-dark headbutton p-2 col-2" onclick="location.href='./#skillsArea'">
                 Skills/Exp.
             </button> 
-            <button class="btn btn-outline-dark headbutton p-2 col-2 mr-5" onclick="location.href='./#contact'">
+            <button id="rightbutton" class="btn btn-outline-dark headbutton p-2 col-2 mr-5" onclick="location.href='./#contact'">
                 Contact
             </button>  
         </div>   
@@ -54,17 +54,17 @@
                 </div> 
             </div>            
             <!--#endregion-->  
-            <hr id="aboutArea" class="position-absolute" style="top:77%">  
+            <hr id="aboutArea">  
 
             <!--#region about me screen--> 
             <div class="h-25 w-100" id="about" style="margin-top:0px">  
-                <h1 id="about-me-title" style="margin-top:5%; margin-left:13%; margin-bottom:0%;" class="text-start">About Me</h1>  
+                <h1 id="about-me-title" style="margin-top:12%; margin-left:13%; margin-bottom:0%;" class="text-start">About Me</h1>  
                 <div class ="d-flex h-50 w-100 justify-content-center"> 
                     <p id="description2" class="h-100">I am a Computer Science student currently pursuing a Bachelor of Sciences at Rutgers University-New Brunswick. As curious as I am about programming, I am curious about the world and spend a lot of time on hobbies as to programming.
-                        <button class="btn btn-outline-dark rounded-pill w-75 mt-5" onclick="window.open('images/Justin_Li-Resumee')" style="font-weight:500">DOWNLOAD CV</button> 
-                        <button class="btn btn-outline-dark rounded-pill w-75 mt-4" onclick="location.href='./#contact'" style="font-weight:500">CONTACT INFO</button> 
+                        <button id="download" class="btn btn-outline-dark rounded-pill w-75 mt-5" onclick="window.open('./assets/Justin_Li-Resumee.pdf')" style="font-weight:500">DOWNLOAD CV</button> 
+                        <button id="ctinfo" class="btn btn-outline-dark rounded-pill w-75 mt-4" onclick="location.href='./#contact'" style="font-weight:500">CONTACT INFO</button> 
                     </p>  
-                    <div class="slide ml-5">
+                    <div id="slideshow" class="slide ml-5">
                         <div class="wrapper">
                             <img src="images/Rutgers-University-Logo.jpg" class="h-50 w-100 mt-3 mr-5"> 
                             <img src="images/sightsee.jpg" class="h-100 w-100 mr-4 mt-1" style="margin-left: 12px;">
@@ -76,15 +76,17 @@
 
                         </div>
                     </div>   
-                </div>       
+                </div>         
+                <div class="d-flex w-100 justify-content-end">
+                    <img src="images/arrow.png" alt="Arrow icon" class="icon arrow mr-5 mt-5" onclick="location.href='./#projectsArea'"> 
+                </div>
             </div>  
-            <img src="images/arrow.png" alt="Arrow icon" class="icon arrow position-absolute" style="top:165%;" onclick="location.href='./#projectsArea'"> 
 
                 <!--#endregion-->  
 
                 <!--#region projects screen-->  
-                <hr id="projectsArea" style="position:absolute; top:155%;">
-                <h1 class="w-100 text-center" style="margin-top:11%;">Projects</h1>
+                <hr id="projectsArea" >
+                <h1 class="w-100 text-center" style="margin-top:8%;">Projects</h1>
                 <div class="d-flex mt-4 w-100 justify-content-center" onclick="window.open('https://github.com/JustinLi3/StudentPortal')"> 
                     <div class="project-card d-flex flex-column rounded w-75 border border-dark text-center">  
                         <div class="d-flex w-100 justify-content-center mt-4">
@@ -116,47 +118,52 @@
                         <div class="d-flex w-100 justify-content-center">
                             <p class="w-75" style="font-size:12px;">This project involves creating a file integrity checker that allows users to verify the integrity of their files by comparing the current hash of the file contents with a previously stored hash. The project consists of two parts: a user-side interface that takes file input and provides hash results, and a backend that handles the hashing process using the SHA-256 algorithm.</p>
                         </div>
-                    </div>
-                </div>     
-                <img src="images/arrow.png" alt="Arrow icon" class="icon arrow position-absolute" style="top:390%;" onclick="location.href='./#skillsArea'"> 
+                    </div> 
+                </div>    
+                <div class="d-flex w-100 justify-content-end">
+                    <img src="images/arrow.png" alt="Arrow icon" class="icon arrow mr-5 mt-5" onclick="location.href='./#skillsArea'"> 
+                </div>  
 
                 <!--#endregion-->  
-
                 <!--#region skills screen--> 
-                <hr id="skillsArea" style="position:absolute; top:390%;">
-                <h1 style="margin-left:17%; margin-top:10%;">Skills</h1>
+                <hr id="skillsArea"> 
+                <h1 style="margin-left:17%; margin-top:9%;">Skills</h1> 
                 <h5 style="margin-top:20px; margin-left:17.5%; margin-bottom:0px;">Languages</h5>
-                <div id="app_grid" class=" w-75" style="margin-left:13%;" > 
-                    <div class="h-25 row w-100 justify-content-center" style="cursor:pointer;">
-                        <div class="tools text-center"><a href="https://www.java.com/en/" target="_blank"><img src="images/java.png" class="w-75 p-4 h-100" style=" object-fit:contain;"></a></div> 
-                        <div class="tools text-center"><a href="https://www.python.org" target="_blank"><img src="images/python.png" class="w-75 p-3 h-100" style=" object-fit:contain;"></a></div> 
-                        <div class="tools text-center"><a href="https://www.javascript.com" target="_blank"><img src="images/js.png" class="w-75 p-4 h-100" style=" object-fit:contain;"></a></div> 
+                <div id="app_grid" class=" w-75" style="top:205%; margin-left:19%;"> 
+                    <div class="h-25 row w-100 justify-content-start" style="cursor:pointer;">
+                        <div class="tools text-center"><a href="https://www.java.com/en/" target="_blank"><img src="images/java.png" class="w-75 p-3 h-100" style=" object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://www.python.org" target="_blank"><img src="images/python.png" class="w-75 p-2 h-100" style=" object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://www.javascript.com" target="_blank"><img src="images/js.png" class="w-75 p-3 h-100" style=" object-fit:contain;"></a></div> 
                         <div class="tools text-center"><a href="https://www.mysql.com" target="_blank"><img src="images/MySql.png" class="w-75  pt-3" style="margin-top:5px;"></a></div> 
-                        <div class="tools text-center"><a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank"><img src="images/CSharp.png" class="w-75 p-3" style="margin-top:8%;" ></a></div> 
+                        <div class="tools text-center"><a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank"><img src="images/CSharp.png" class="w-75 p-2" style="margin-top:8%;" ></a></div> 
                         <div class="tools text-center"><a href="https://www.w3schools.com/html/html_css.asp" target="_blank"><img src="images/html_css.png" class="w-75 pt-2" style="margin-top:8%;" ></a></div> 
                     </div>   
                 </div>  
                 <h5 class="mt-2" style="margin-left:17.5%; margin-bottom:0px;">Frameworks</h5> 
                 <div id="app_grid" class=" w-75" style="top:205%; margin-left:19%;" > 
                     <div class="h-25 row w-100 justify-content-start" style="cursor:pointer;">
-                        <div class="tools text-center"><a href="https://jquery.com" target="_blank"><img src="images/jquery.gif" class="p-4 h-100" style="width:90%; object-fit:contain;"></a></div> 
-                        <div class="tools text-center"><a href="https://getbootstrap.com" target="_blank"><img src="images/bootstrap.png" class="p-3 h-100" style="width:75%; object-fit:contain;"></a></div> 
-                        <div class="tools text-center"><a href="https://react.dev" target="_blank"><img src="images/react.png" class=" p-3 h-100" style="width:95%; object-fit:contain;"></a></div> 
-                        <div class="tools text-center"><a href="https://www.langchain.com" target="_blank"><img src="images/langchain.png" class=" p-3 h-100" style="width:95%; object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://jquery.com" target="_blank"><img src="images/jquery.gif" class="p-3 h-100" style="width:90%; object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://getbootstrap.com" target="_blank"><img src="images/bootstrap.png" class="p-2 h-100" style="width:75%; object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://react.dev" target="_blank"><img src="images/react.png" class=" p-2 h-100" style="width:95%; object-fit:contain;"></a></div> 
+                        <div class="tools text-center"><a href="https://www.langchain.com" target="_blank"><img src="images/langchain.png" class=" p-2 h-100" style="width:95%; object-fit:contain;"></a></div> 
                     </div>   
                 </div>   
-                <h5 class="mt-2" style="margin-left:17.5%; margin-bottom:0px;">Other</h5> 
+                <h5 class="mt-2" style="margin-left:17.5%; margin-bottom:0px;">Other</h5>  
                 <div id="app_grid" class=" w-75" style="top:205%; margin-left:19%;" > 
-                    <div class="h-25 row w-100 justify-content-start" style="cursor:pointer;">
-                        <div class="tools text-center"><a href="https://git-scm.com" target="_blank"><img src="images/git.png" class="h-100" style="width:105%; object-fit:contain;"></a></div> 
-                    </div>   
-                </div>    
-                <img src="images/arrow.png" alt="Arrow icon" class="icon arrow position-absolute" style="top:480%;" onclick="location.href='./#experiencesArea'"> 
+                    <div class="h-25 row w-100 " style="cursor:pointer;">
+                        <div class="tools text-center p-1"><a href="https://git-scm.com" target="_blank"><img src="images/git.png" class="h-100" style="width:105%; object-fit:contain;"></a></div> 
+                    </div>                        
+                </div>        
+                <div class="d-flex w-100 justify-content-end">
+                    <img src="images/arrow.png" alt="Arrow icon" class="icon arrow mr-5" onclick="location.href='./#experiencesArea'"> 
+                </div>  
+               
+               
                 <!--#endregion-->   
 
                 <!--#region experiences screen-->  
-                <hr id="experiencesArea" style="position:absolute; top:480%;">
-                <h1 class="w-100 text-center" style="margin-top:5%;">Experiences</h1>
+                <hr id="experiencesArea">
+                <h1 class="w-100 text-center " style="margin-top:9%;">Experiences</h1>
                 <div class="d-flex mt-4 w-100 justify-content-center"> 
                     <div class="d-flex flex-column rounded border border-dark text-center" style="width:65%">  
                         <div class="d-flex w-100 justify-content-center mt-4">
@@ -183,14 +190,16 @@
                                 <li style="margin-bottom:4px">Upcoming September 2024</li>
                             </ul>
                         </div>
-                    </div>
-                </div>    
-                <img src="images/arrow.png" alt="Arrow icon" class="icon arrow position-absolute" style="top:570%;" onclick="location.href='./#contact'"> 
+                    </div> 
+                </div>     
+                <div class="d-flex w-100 justify-content-end">
+                    <img src="images/arrow.png" alt="Arrow icon" class="icon arrow mr-5" onclick="location.href='./#contact'"> 
+                </div>  
                 <!--#endregion-->    
 
                 <!--#region contact screen--> 
             
-                <section id="contact" style="margin-top:8%; margin-bottom:5%;">
+                <section id="contact" style="margin-top:8%; margin-bottom:8%;">
   
                     <h1 class="w-100 text-center">Contact</h1>  
                     

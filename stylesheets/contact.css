@@ -11,7 +11,7 @@
 	padding: 20px; 
 	padding-bottom: 0px;
 	position: relative;
-	max-width: 840px;
+	max-width: 60%;
   }
   
   
@@ -42,14 +42,6 @@
 	margin-left: 62px;
   }
   
-  .phone {
-	margin-left: 56px;
-  }
-  
-  .gmail {
-	margin-left: 53px;
-  }
-  
   .contact-text a {
 	color: #bbb;
 	text-decoration: none;
@@ -67,7 +59,6 @@
 	position: relative;
 	font-size: 22px;
 	text-align: center;
-	width: 100%;
 	margin: 0 auto;
 	padding: 0;
   }

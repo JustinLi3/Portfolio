@@ -14,7 +14,15 @@ $(document).ready(function(){
             }, 100);
 
         }
-    });  
+    });   
+    $(window).scroll(function(){
+        $("#welcome-text").css("opacity", 1 - $(window).scrollTop()/500);
+        $("#description1").css("opacity", 1 - $(window).scrollTop()/500);  
+        $("#about-me-title").css("opacity", 3 - $(window).scrollTop()/450);  
+        $("#description2").css("opacity", 3 - $(window).scrollTop()/450); 
+        $("#slideshow").css("opacity", 3 - $(window).scrollTop()/450); 
+
+    });
     document.querySelector('#contact-form').addEventListener('submit', (e) => {
         e.preventDefault();
         e.target.elements.name.value = '';
@@ -37,9 +45,5 @@ $(document).ready(function(){
     textLoad();
     setInterval(textLoad, 9000);  
 
-    $(window).scroll(function(){
-        $("#welcome-text").css("opacity", 1 - $(window).scrollTop()/500);
-        $("#description1").css("opacity", 1 - $(window).scrollTop()/500);
-    });
     
 });
