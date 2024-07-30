@@ -3,16 +3,6 @@
 	height: 100%;
   }
   
-  .section-header {
-	text-align: center;
-	margin: 0 auto;
-	padding: 40px 0;
-	font: 300 60px 'Oswald', sans-serif;
-	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-	letter-spacing: 6px;
-  }
-  
   .contact-wrapper {
 	display: flex;
 	flex-direction: row;
@@ -23,46 +13,14 @@
 	max-width: 840px;
   }
   
-  /* Left contact page */
-  .form-horizontal {
-	/*float: left;*/
-	max-width: 400px;
-	font-family: 'Lato';
-	font-weight: 400;
-  }
   
   .form-control, 
   textarea {
-	max-width: 400px;
 	background-color: rgb(255, 255, 255);
 	color: rgb(0, 0, 0);
 	letter-spacing: 1px;
   }
   
-  .send-button {
-	margin-top: 15px;
-	height: 34px;
-	width: 400px;
-	overflow: hidden;
-	transition: all .2s ease-in-out;
-  }
-  
-  .alt-send-button {
-	width: 400px;
-	height: 34px;
-	transition: all .2s ease-in-out;
-  }
-  
-  .send-text {
-	display: block;
-	margin-top: 10px;
-	font: 700 12px 'Lato', sans-serif;
-	letter-spacing: 2px;
-  }
-  
-  .alt-send-button:hover {
-	transform: translate3d(0px, -29px, 0px);
-  }
   
   /* Begin Right Contact Page */
   .direct-contact-container {
