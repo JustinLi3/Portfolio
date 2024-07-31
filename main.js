@@ -28,9 +28,9 @@ $(document).ready(function(){
         e.target.elements.name.value = '';
         e.target.elements.email.value = '';
         e.target.elements.message.value = '';
-    });
-
-    const text = document.querySelector(".sec-text");
+    }); 
+}); 
+const text = document.querySelector(".sec-text");
     const textLoad = () => {
         setTimeout(() => {
             text.textContent = "Developer";
@@ -43,7 +43,4 @@ $(document).ready(function(){
         }, 6000); //1s = 1000 milliseconds
     }
     textLoad();
-    setInterval(textLoad, 9000);  
-
-    
-});
+    setInterval(textLoad, 9000); 
